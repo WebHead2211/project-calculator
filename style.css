@@ -1,0 +1,83 @@
+#calc-body {
+    background-color: #868686;
+    width: 500px;
+    height: 600px;
+    padding: 50px 20px 50px;
+    border-radius: 15px;
+    margin: 50px auto;
+    box-shadow: 0 0 2px #999;
+}
+
+#calc-screen {
+    background-color: #aed4c7;
+    width: 450px;
+    height: 100px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('./file/digital-7.regular.ttf');
+   }
+
+p {
+    text-align: center;
+    margin: 0;
+    float: right;
+    font-size: 80px;
+    height: 60px;
+    padding: 20px;
+    font-family: 'digital-clock-font';
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: 500px;
+}
+
+.btn {
+    margin: 20px auto;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #a0a0a0;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 100px;
+}
+
+.btn:active {
+    background-color: #8f8f8f;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.btn-big {
+    flex-grow: 0.93;
+}
+
+.btn-top {
+    background-color: #e48314;
+}
+
+.btn-top:active {
+    background-color: #9e5b0e;    
+}
+
+.btn-op {
+    background-color: #333333;
+}
+
+.btn-op:active {
+    background-color: #111;    
+}
