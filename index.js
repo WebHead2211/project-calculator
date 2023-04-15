@@ -141,7 +141,11 @@ function delClick() {
     if (number.numOne && operator && number.numTwo) {
         // number.numTwo = removeNumber(number.numTwo);
         // number.numTwo = +(removeCharAt(number.numTwo.toString()));
-        number.numTwo = +(display.textContent.replace(`${number.numOne.toString()} ${operator}`, ''));
+        if(number.numTwo.toString().includes('.')){
+            number.numTwo = (display.textContent.replace(`${number.numOne.toString()} ${operator}`, ''));
+        } else {
+            number.numTwo = +(display.textContent.replace(`${number.numOne.toString()} ${operator}`, ''));
+        }
     } else if (operator && !number.numTwo) {
         display.textContent = removeCharAt(display.textContent);
         operator = null;
@@ -151,7 +155,11 @@ function delClick() {
         }
         // number.numOne = removeNumber(number.numOne);
         // number.numOne = +(removeCharAt(number.numOne.toString()))
-        number.numOne = +display.textContent;
+        if(number.numOne.toString().includes('.')){
+            number.numOne = (display.textContent + '');
+        } else {
+            number.numOne = +display.textContent;
+        }
         operator = null;
     }
 }
@@ -203,11 +211,11 @@ function operate(num1, op, num2) {
 
 //MATH FUNCTIONS
 function add(a, b) {
-    return a + b;
+    return (a + b).toFixed(2).replace(/[.,]00$/, "");
 }
 
 function subtract(a, b) {
-    return a - b;
+    return (a - b).toFixed(2).replace(/[.,]00$/, "");
 }
 
 function multiply(a, b) {
