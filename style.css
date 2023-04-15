@@ -16,20 +16,31 @@
     border-radius: 15px;
 }
 
+span {
+    text-align: center;
+    margin: 0;
+    float: right;
+    font-size: 80px;
+    height: 10px;
+    padding: 20px;
+    font-family: 'digital-clock-font';
+    white-space: nowrap;
+}
+
 @font-face{
     font-family:'digital-clock-font';
     src: url('./file/digital-7.regular.ttf');
    }
 
-p {
+/* p {
     text-align: center;
     margin: 0;
     float: right;
     font-size: 80px;
-    height: 60px;
+    height: 10px;
     padding: 20px;
     font-family: 'digital-clock-font';
-}
+} */
 
 .grid-container {
     display: flex;
