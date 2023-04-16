@@ -1,3 +1,13 @@
+body {
+    background-color: #caf0f8;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: 'digital-clock-font';
+    font-size: 80px;
+}
+
 #calc-body {
     background-color: #868686;
     width: 500px;
@@ -27,10 +37,10 @@ span {
     white-space: nowrap;
 }
 
-@font-face{
-    font-family:'digital-clock-font';
+@font-face {
+    font-family: 'digital-clock-font';
     src: url('./file/digital-7.regular.ttf');
-   }
+}
 
 /* p {
     text-align: center;
@@ -71,7 +81,13 @@ span {
     background-color: #8f8f8f;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
+}
+
+.btn-active {
+    background-color: #8f8f8f;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 
 .btn-big {
     flex-grow: 0.93;
@@ -82,7 +98,7 @@ span {
 }
 
 .btn-top:active {
-    background-color: #9e5b0e;    
+    background-color: #9e5b0e;
 }
 
 .btn-op {
@@ -90,5 +106,19 @@ span {
 }
 
 .btn-op:active {
-    background-color: #111;    
+    background-color: #111;
+}
+
+h1 {
+    text-align: center;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0096c7;
+    color: white;
+    text-align: center;
 }
